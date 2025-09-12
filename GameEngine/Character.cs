@@ -40,7 +40,6 @@ public class Character : GameObject {
         if (!applyGravity) {
             velocity.Y = TendToZero(velocity.Y, decel);
         }
-        
     }
 
     private void ApplyGravity(Map map) {

@@ -59,6 +59,10 @@ public class GameObject {
                 layerDepth);
     }
 
+    public virtual void BulletResponse() {
+        
+    }
+
     private void CalculateCenter() {
         if (image == null)
             return;

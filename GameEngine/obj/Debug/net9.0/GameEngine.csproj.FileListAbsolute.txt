@@ -39,3 +39,14 @@
 /Users/Shared/1_work/game/z-engine/GameEngine/obj/Debug/net9.0/GameEngine.genruntimeconfig.cache
 /Users/Shared/1_work/game/z-engine/GameEngine/obj/Debug/net9.0/ref/GameEngine.dll
 /Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/pixel.png
+/Users/Shared/1_work/game/z-engine/GameEngine/obj/Debug/net9.0/GameEngine.sourcelink.json
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/128grid.png
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/Audio/explosion.wav
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/Audio/song.wav
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/background.png
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/bullet.png
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/decorplaceholder.png
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/enemy.png
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/Fonts/Arial.xnb
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/orbsheet.png
+/Users/Shared/1_work/game/z-engine/GameEngine/bin/Debug/net9.0/Content/spritesheet.png

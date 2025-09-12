@@ -43,8 +43,9 @@ public class Game1 : Microsoft.Xna.Framework.Game {
         base.Draw(gameTime);
     }
 
-    public void LoadLevel() {
+    public void LoadLevel() { 
         this.objects.Add(new Player(new Vector2(640, 360)));
+        this.objects.Add(new Enemy(new Vector2(300, 522)));
         this.map.walls.Add(new Wall(new Rectangle(256, 256, 256, 256)));
         this.map.walls.Add(new Wall(new Rectangle(0, 650, 1280, 128)));
         this.LoadObjects();

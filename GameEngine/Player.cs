@@ -5,14 +5,13 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameEngine;
 
-public class Player : Character {
+public class Player : FireCharacter {
     public Player() {
     }
 
     public Player(Vector2 inputPosition) {
         this.position = inputPosition;
     }
-
 
     public override void Initialize() {
         base.Initialize();
@@ -46,6 +45,9 @@ public class Player : Character {
             if (Input.IsKeyDown(Keys.S)) {
                 base.MoveDown();
             }
+        }
+        if (Input.IsKeyDown(Keys.Space)) {
+            Fire();
         }
     }
 
