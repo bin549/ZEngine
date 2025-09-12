@@ -31,6 +31,7 @@ public class Game1 : Microsoft.Xna.Framework.Game {
     protected override void Update(GameTime gameTime) {
         Input.Update();
         this.UpdateObjects();
+        map.Update(objects);
         base.Update(gameTime);
     }
 
@@ -48,6 +49,8 @@ public class Game1 : Microsoft.Xna.Framework.Game {
         this.objects.Add(new Enemy(new Vector2(300, 522)));
         this.map.walls.Add(new Wall(new Rectangle(256, 256, 256, 256)));
         this.map.walls.Add(new Wall(new Rectangle(0, 650, 1280, 128)));
+        this.map.decor.Add(new Decor(Vector2.Zero, "background", 1f));
+        this.map.LoadMap(Content);
         this.LoadObjects();
     }
 
@@ -67,6 +70,9 @@ public class Game1 : Microsoft.Xna.Framework.Game {
     public void DrawObjects() {
         for (var i = 0; i < objects.Count; i++) {
             objects[i].Draw(spriteBatch);
+        }
+        for (var i = 0; i < map.decor.Count; i++) {
+            map.decor[i].Draw(spriteBatch);
         }
     }
 }
