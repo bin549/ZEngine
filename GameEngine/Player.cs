@@ -6,6 +6,8 @@ using Microsoft.Xna.Framework.Graphics;
 namespace GameEngine;
 
 public class Player : FireCharacter {
+    public static int score;
+
     public Player() {
     }
 
@@ -14,6 +16,7 @@ public class Player : FireCharacter {
     }
 
     public override void Initialize() {
+        score = 0;
         base.Initialize();
     }
 

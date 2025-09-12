@@ -8,6 +8,7 @@ public class Game1 : Microsoft.Xna.Framework.Game {
     private SpriteBatch spriteBatch;
     public List<GameObject> objects = new List<GameObject>();
     public Map map = new Map();
+    GameHUD gameHud = new GameHUD();
 
     public Game1() {
         this.graphics = new GraphicsDeviceManager(this);
@@ -25,6 +26,7 @@ public class Game1 : Microsoft.Xna.Framework.Game {
     protected override void LoadContent() {
         this.spriteBatch = new SpriteBatch(GraphicsDevice);
         this.map.Load(Content);
+        gameHud.Load(Content);
         this.LoadLevel();
     }
 
@@ -41,6 +43,7 @@ public class Game1 : Microsoft.Xna.Framework.Game {
         this.DrawObjects();
         this.map.DrawWalls(spriteBatch);
         this.spriteBatch.End();
+        gameHud.Draw(spriteBatch);
         base.Draw(gameTime);
     }
 

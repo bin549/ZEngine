@@ -47,6 +47,8 @@ public class Enemy : Character {
     public override void BulletResponse() {
         active = false;
         respawnTimer = maxRespawnTime;
+
+        Player.score++;
         explosion.Play();
         base.BulletResponse();
     }
