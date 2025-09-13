@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine", "GameEngine\GameEngine.csproj", "{E7CD16FF-1CBA-4E55-8ED1-3074324D39DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZEngine", "ZEngine\ZEngine.csproj", "{E7CD16FF-1CBA-4E55-8ED1-3074324D39DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNA.Core", "FNA\FNA.Core.csproj", "{94DAA366-4DEB-4223-A40F-07B8075F4861}"
 EndProject
