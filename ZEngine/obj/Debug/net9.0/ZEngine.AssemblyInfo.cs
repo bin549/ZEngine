@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e81b60eaa71ba55c57b390f267efe224373c948")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2da1cfa8570a36de71cfe4407b2edec02f97eb04")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

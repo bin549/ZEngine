@@ -8,7 +8,7 @@ namespace ZEngine;
 
 public static class TextureLoader {
     const bool usingPipeline = false;
-
+    
     public static Texture2D Load(string filePath, ContentManager content) {
         Texture2D image = content.Load<Texture2D>(filePath);
         if (usingPipeline == false)

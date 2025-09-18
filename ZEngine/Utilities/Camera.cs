@@ -35,17 +35,16 @@ static class Camera {
     }
 
     private static void UpdateMovement(Vector2 follow) {
-        if (updateXAxis == true)
+        if (updateXAxis)
             position.X += ((follow.X - position.X));
-
-        if (updateYAxis == true)
+        if (updateYAxis)
             position.Y += ((follow.Y - position.Y));
     }
 
     public static void LookAt(Vector2 lookAt) {
-        if (updateXAxis == true)
+        if (updateXAxis)
             position.X = lookAt.X;
-        if (updateYAxis == true)
+        if (updateYAxis)
             position.Y = lookAt.Y;
     }
 

@@ -7,7 +7,6 @@ namespace ZEngine;
 public class FireCharacter : Character {
     List<Bullet> bullets = new List<Bullet>();
     const int numOfBullets = 3;
-    
     public FireCharacter() {}
 
     public override void Initialize() {

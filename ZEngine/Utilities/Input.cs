@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 
 namespace ZEngine;
@@ -13,7 +13,6 @@ public static class Input {
     public static void Update() {
         lastKeyboardState = keyboardState;
         keyboardState = Keyboard.GetState();
-
         lastMouseState = mouseState;
         mouseState = Mouse.GetState();
     }
@@ -27,38 +26,23 @@ public static class Input {
     }
 
     public static bool KeyPressed(Keys input) {
-        if (keyboardState.IsKeyDown(input) == true && lastKeyboardState.IsKeyDown(input) == false)
-            return true;
-        else
-            return false;
+        return keyboardState.IsKeyDown(input) == true && lastKeyboardState.IsKeyDown(input) == false;
     }
 
     public static bool MouseLeftDown() {
-        if (mouseState.LeftButton == ButtonState.Pressed)
-            return true;
-        else
-            return false;
+        return mouseState.LeftButton == ButtonState.Pressed;
     }
 
     public static bool MouseRightDown() {
-        if (mouseState.RightButton == ButtonState.Pressed)
-            return true;
-        else
-            return false;
+        return mouseState.RightButton == ButtonState.Pressed;
     }
 
     public static bool MouseLeftClicked() {
-        if (mouseState.LeftButton == ButtonState.Pressed && lastMouseState.LeftButton == ButtonState.Released)
-            return true;
-        else
-            return false;
+        return mouseState.LeftButton == ButtonState.Pressed && lastMouseState.LeftButton == ButtonState.Released;
     }
 
     public static bool MouseRightClicked() {
-        if (mouseState.RightButton == ButtonState.Pressed && lastMouseState.RightButton == ButtonState.Released)
-            return true;
-        else
-            return false;
+        return mouseState.RightButton == ButtonState.Pressed && lastMouseState.RightButton == ButtonState.Released;
     }
 
     public static Vector2 MousePositionCamera() {
@@ -72,14 +56,12 @@ public static class Input {
         Vector2 mousePosition = Vector2.Zero;
         mousePosition.X = lastMouseState.X;
         mousePosition.Y = lastMouseState.Y;
-
         return ScreenToWorld(mousePosition);
     }
 
     private static Vector2 ScreenToWorld(Vector2 input) {
         input.X -= Resolution.VirtualViewportX;
         input.Y -= Resolution.VirtualViewportY;
-
         return Vector2.Transform(input, Matrix.Invert(Camera.GetTransformMatrix()));
     }
 }

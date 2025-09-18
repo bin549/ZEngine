@@ -30,3 +30,5 @@
 /Users/Shared/1_work/game/z-engine/ZEngine/obj/Debug/net9.0/ZEngine.pdb
 /Users/Shared/1_work/game/z-engine/ZEngine/obj/Debug/net9.0/ZEngine.genruntimeconfig.cache
 /Users/Shared/1_work/game/z-engine/ZEngine/obj/Debug/net9.0/ref/ZEngine.dll
+/Users/Shared/1_work/game/z-engine/ZEngine/bin/Debug/net9.0/Content/.DS_Store
+/Users/Shared/1_work/game/z-engine/ZEngine/bin/Debug/net9.0/Content/player.png

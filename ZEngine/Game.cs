@@ -16,7 +16,6 @@ public class Game : Microsoft.Xna.Framework.Game {
         Resolution.Init(ref graphics);
         Resolution.SetVirtualResolution(1280, 720);
         Resolution.SetResolution(1280, 720, false);
-        
     }
 
     protected override void Initialize() {

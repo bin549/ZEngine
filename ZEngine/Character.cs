@@ -20,11 +20,11 @@ public class Character : GameObject {
     }
 
     public override void Update(List<GameObject> objects, Map map) {
-        this.updateMovement(objects, map);
+        this.UpdateMovement(objects, map);
         base.Update(objects, map);
     }
 
-    private void updateMovement(List<GameObject> objects, Map map) {
+    private void UpdateMovement(List<GameObject> objects, Map map) {
         if (velocity.X != 0 && CheckCollisions(map, objects, true)) {
             velocity.X = 0; 
         }
@@ -94,7 +94,7 @@ public class Character : GameObject {
         }
         return false;
     }
-    
+
     protected virtual bool CheckCollisions(Map map, List<GameObject> objects, bool xAxis) {
         Rectangle futureBoundingBox = BoundingBox;
         int maxX = (int)maxSpeed;

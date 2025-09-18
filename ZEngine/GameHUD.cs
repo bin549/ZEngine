@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace ZEngine;
 
 public class GameHUD {
-    SpriteFont font;
+    private SpriteFont font;
 
     public void Load(ContentManager content) {
         font = content.Load<SpriteFont>("Fonts\\Arial");

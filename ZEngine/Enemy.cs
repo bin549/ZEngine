@@ -10,7 +10,6 @@ public class Enemy : Character {
     private int respawnTimer;
     private const int maxRespawnTime = 60;
     Random random = new Random();
-    
     SoundEffect explosion;
 
     public Enemy() {
@@ -47,7 +46,6 @@ public class Enemy : Character {
     public override void BulletResponse() {
         active = false;
         respawnTimer = maxRespawnTime;
-
         Player.score++;
         explosion.Play();
         base.BulletResponse();

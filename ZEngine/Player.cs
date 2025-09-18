@@ -21,7 +21,7 @@ public class Player : FireCharacter {
     }
 
     public override void Load(ContentManager content) {
-        this.image = TextureLoader.Load("sprite", content);
+        this.image = TextureLoader.Load("player", content);
         base.Load(content);
     }
 
