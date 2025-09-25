@@ -1,0 +1,68 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CardDemoApp/1.0.0": {
+        "dependencies": {
+          "ZEngine": "1.0.0",
+          "FNA.Reference": "25.9.0.0"
+        },
+        "runtime": {
+          "CardDemoApp.dll": {}
+        }
+      },
+      "FNA/1.0.0": {
+        "runtime": {
+          "FNA.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "ZEngine/1.0.0": {
+        "dependencies": {
+          "FNA": "1.0.0"
+        },
+        "runtime": {
+          "ZEngine.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FNA.Reference/25.9.0.0": {
+        "runtime": {
+          "FNA.dll": {
+            "assemblyVersion": "25.9.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CardDemoApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FNA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ZEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FNA.Reference/25.9.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

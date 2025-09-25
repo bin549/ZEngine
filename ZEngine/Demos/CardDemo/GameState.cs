@@ -15,9 +15,9 @@ public class GameState : IFcsState {
     private int dealingIndex;
 
     public void Load(ContentManager content, GraphicsDevice graphicsDevice) {
-        background = TextureLoader.Load("Card/Sprites/Environments/Game_BG", content);
+        background = TextureLoader.Load("Sprites/Environments/Game_BG", content);
         deck.Initialize(content);
-        MusicPlayer.PlayLoop(content, "Card/Sounds/Musics/Time Passes");
+        MusicPlayer.PlayLoop(content, "Sounds/Musics/Time Passes");
         var start = new Vector2(512/2f - 2 * 60, 360f);
         int gap = 60;
         for (int i = 0; i < 5; i++) {

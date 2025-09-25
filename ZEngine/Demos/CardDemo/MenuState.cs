@@ -15,13 +15,13 @@ public class MenuState : IFcsState {
     }
 
     public void Load(ContentManager content, GraphicsDevice graphicsDevice) {
-        title = TextureLoader.Load("Card/Sprites/UI/title_screen", content);
+        title = TextureLoader.Load("Sprites/UI/title_screen", content);
         pixel = TextureLoader.Load("pixel", content);
         startButton.bounds = new Rectangle(512/2 - 120, 480 - 120, 240, 64);
         startButton.text = "Start (Enter)";
         startButton.Load(content);
         startButton.Clicked += () => onStart?.Invoke();
-        MusicPlayer.PlayLoop(content, "Card/Sounds/Musics/Home");
+        MusicPlayer.PlayLoop(content, "Sounds/Musics/Home");
     }
 
     public void Update(GameTime gameTime) {

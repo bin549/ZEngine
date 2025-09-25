@@ -89,4 +89,3 @@ public class Game : Microsoft.Xna.Framework.Game {
         Camera.Update(objects[0].position);
     }
 }
-
